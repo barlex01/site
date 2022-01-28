@@ -1,0 +1,73 @@
+.carousel {
+    max-width: 1000px;
+    height: 100%;
+
+    img {
+        height: 480px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+       
+    }
+   
+    &-item__title{
+        
+        text-align: center;
+        font-size: 30px;
+        padding: 15px 0;
+        background-color: $transparency;
+        font-weight: 500;
+        font-family: -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    
+}
+.slick-slider.carousel{
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    background-image:url(../img/src/svg/arws.svg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    opacity: 0.4;
+    cursor: pointer;
+    background-color:transparent;
+}    
+.slick-next{
+    right: 0;
+    transition: 0.3s all;
+    &:active{
+        transform: translateX(4px)rotate(-5deg);
+    }
+}
+.slick-prev{
+    z-index: 3;
+    transform: rotate(180deg);
+    transition: 0.2s all;
+    &:active{
+        transform: translateX(-4px) rotate(175deg);
+    }
+}
+.carousel-item__link{
+    position: relative;
+    &::before{
+        
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            width: 880px;
+            height: 480px;
+            background: rgba(0, 0, 0, 0.205);
+            
+            z-index: 200;
+            border-radius: 10px;
+    }
+}

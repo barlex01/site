@@ -1,0 +1,133 @@
+.form__group {
+    margin-bottom: 2rem;
+    position: relative;
+    
+}
+
+.form__control {
+    
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: rgb(173 173 173);
+    background-color: rgb(19 19 19 / 35%);
+    width: 100%;
+    height: 5rem;
+    padding: 2% 2%;
+    
+    outline: none;
+    border: none;
+
+    resize: none;
+    border-radius: 5px;
+
+    &::placeholder {
+        
+        
+        color: rgb(122, 122, 120);
+        width: 100%;
+        opacity: 0.4;
+
+
+    }
+
+    &:hover+.form__line,
+    &:focus+.form__line {
+        width: 99.4%;
+        
+    }
+
+    &:active::placeholder {
+        opacity: 0;
+    }
+
+}
+
+.form__line {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: $blueColor;
+    opacity: 0.7;
+    left: 2px;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.5s linear;
+}
+
+.btn__form {
+    background-color:$btnForm;
+    color: rgb(173 173 173);
+    padding: 1rem 1.8rem;
+    display: block;
+    border-radius: 1em;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+
+
+}
+
+
+ul.comments {
+    margin-top: 5rem;
+    
+
+}
+.comments__item{
+    margin-bottom: 2.5rem;
+    > .comments{
+        padding-left: 2.5rem;
+        margin-top: 2.5rem;
+    }
+}
+.comments__header{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.comments__author{
+    margin-left: 1.5rem;
+    line-height: 15px;
+}
+.comments__name {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+}
+.comments__time {
+    font-size: 14px;
+    color: #757575;
+
+}
+.comments__text {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(173 173 173);
+}
+.comments__reply {
+    background-color: transparent;
+    color:$blueColor;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    cursor: pointer;
+}
+.comments__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bottom5px{
+    bottom: 5px;
+}

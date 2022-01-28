@@ -1,0 +1,274 @@
+.post__social-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__title {
+    color: rgb(168 166 166);
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0;
+
+}
+.post__date-lin--blue {
+    &:hover {
+        color: $blueColor;
+    }
+}
+.mr-r {
+    margin:0 10px 20px 0;
+    
+}
+.mr-t {
+    margin-top: 10px;
+}
+.post {
+
+    border: 1px solid transparent;
+    padding: 20px 20px;
+    
+    background-color: $backgroundImage;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba($color: #000000, $alpha: .6);
+    margin-bottom: 40px;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+        border: 1px solid $blueColor;
+        box-shadow: $postShadow;
+        transform: translate(-3px, -5px);
+    }
+}
+.add-post__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    textarea {
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 400;
+        width: 70%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        resize: none;
+        color: rgb(207, 207, 207);
+        &::placeholder {
+            color: rgba(180, 194, 199, 0.884);
+        }
+    }
+}
+.post__form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+.post__file {
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s background-color ease-in-out;
+    background: rgb(73, 83, 85) url('../img/src/svg/icons9.png')center;
+    background-size: cover;
+    &:hover {
+        background-color:$orangeColor;
+
+    }
+    input {
+        display: none;
+    }
+}
+.post__submit {
+    display: block;
+    width: 44px;
+    margin-left: 15px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: rgb(73, 83, 85) url('../img/src/svg/icons8.png')center;
+    transition: 0.5s background-color ease-in-out;
+    background-size: cover;
+    &:hover {
+        background-color: $orangeColor;
+    }
+}
+.new-post {
+    background-color: $backgroundImage;
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 20px 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 2px rgb(0 0 0 / 60%);
+    box-shadow: 0 2px 2px rgb(0 0 0 / 60%);
+    margin-bottom: 50px;
+    margin-top: 0px;
+    transition: all 0.5s ease-in-out;
+    line-height: 25px;
+    &:hover {
+        box-shadow: $postShadow;
+        transform: translate(-3px, -5px);
+    }
+    &__text {
+        color: rgb(173, 173, 173);
+        font-size: 15px;
+        margin-bottom: 10px;
+        transition: all 0.2s ease-in-out;
+        
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1.15em;
+        }
+        h5 {
+            font-size: 1em;
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+        ul,
+        ol {
+            margin-bottom: 2rem;
+        }
+        ol {
+            list-style: decimal;
+            list-style-position: inside;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        img {
+            display: block;
+            margin-bottom: 2rem;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        a{
+            color: $blueColor;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    }
+    &__date {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        transition: 0.5s color ease-in-out;
+        color: rgb(73, 83, 85);
+        p {
+            font-size: 25px;
+            color: rgb(106, 127, 131);
+        }
+        
+        &-link {
+            text-decoration: none;
+            color: rgb(73, 83, 85);
+            transition: color 0.5s ease-in;
+            margin: 0 10px;
+            &:hover {
+                 
+                color: $orangeColor;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+}
+.border__bottom{
+    border-bottom: 2px solid #adacac;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.post__date-lin--blue,
+.post__date-link {
+    text-decoration: none;
+    color: rgb(73, 83, 85);
+    transition: color 0.5s ease-in;
+    font-size: 14px;
+}
+.post__date-link:hover {
+    color: $orangeColor;
+}
+.share {
+    display: flex;
+    align-items: center;
+    &:hover img {
+        opacity: 1;
+    }
+    img {
+        transition: 0.5s all ease-in-out;
+        margin-left: 10px;
+        width: 30px;
+        height: 40px;
+        opacity: 0.3;
+    }
+}
+.new-post__header {
+    margin: -20px -20px 0px;
+    &--video {
+        margin: 0 0 25px;
+    }
+}
+.new-post__img {
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border-radius: 5px 5px 0 0;
+}
+.new-post__img {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .3);
+    }
+}
+.new-post__header-title {
+    padding: 0 20px 20px;
+}
+.new-post__title-link {
+    color: rgb(168, 166, 166);
+    text-decoration: none;
+    color: rgb(168, 166, 166);
+    transition: text-shadow 0.5s ease-out,
+        color 0.5s ease-in;
+    &:hover {
+        text-shadow: 0px 5px 4px rgba($color: #000000, $alpha: 1.0),
+            0px 8px 8px rgba($color: #000000, $alpha: 1.0),
+            0px 2px 4px rgba($color: #000000, $alpha: 1.0),
+            0px 0px 4px rgba($color: #000000, $alpha: 1.0);
+        color: #dadada;
+    }
+}

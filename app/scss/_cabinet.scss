@@ -1,0 +1,30 @@
+.cabinet{
+    display: flex;
+    justify-content: space-between;
+}
+.form__avatar{
+    width: 200px;
+    height: auto;
+    object-fit: cover; 
+}
+.cabinet__form{
+    width: 600px;
+}
+.form__image{
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.cabinet__file{
+    
+    font-weight: 200;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.2s;
+    
+    input{
+        display: none;
+    }
+    &:hover{
+        color: white;
+    }
+}

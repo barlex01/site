@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="shortcut icon" href="img/src/ico/world_earth_16758.ico" type="image/x-icon" />
+  <title>Barlex`s site</title>
+</head>
+
+<body class="body-1">
+  <!-- <div class="page"> -->
+  <header class="header">
+    <div class="header__left">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Main</a>
+          </li>
+          <li class="nav__item">
+            <a id="menu" class="nav__link has-subnav" href="#"> Organizer</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="audio.html">music</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#site">Page layout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__right">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="cabinet.html">Profile</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="signup.html">Вход</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="search" action="/" method="POST">
+        <input class="search__input" type="text" placeholder="Поиск по блогу" />
+      </form>
+    </div>
+  </header>
+  <aside class="sidebar">
+    <div class="sidebar__header">
+      <img src="img/src/photo/IMG_0111.JPG" alt="table, chair, notebook" />
+    </div>
+    <div class="sidebar__content">
+      <div class="profile">
+        <img class="profile__avatar" src="img/src/photo/IMG_0102.jpeg" alt="" />
+        <div class="profile__name">Rassudovskii Alexei</div>
+        <div class="profile__prof">Front-end developer</div>
+
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" target="-blank" href="https://www.instagram.com/barlex5">
+              <img src="img/src/svg/instagram .svg" alt="" /></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" target="-blank" href="https://vk.com/barlex">
+              <img src="img/src/svg/vk .svg" alt="" /></a>
+          </li>
+        </ul>
+        <div class="profile__text">
+          <p>
+            Начинающий front-end разработчик. Занимаюсь разработкой сайтов. На
+            данный момент работаю на фрилансе. Общее количество практики
+            достигает 1000 часов.
+          </p>
+        </div>
+      </div>
+      <div class="siderbar__footer">
+        <a class="btn btn--gold" href="./works.html">Мои работы</a>
+        <a class="btn btn--gold" href="mailto:bar_lex@bk.ru">Написать мне</a>
+      </div>
+    </div>
+    <div class="sidebar__footer"></div>
+  </aside>
+  <main class="main">
+    <div class="container">
+      <h2 class="main__title">Profile</h2>
+
+      <form action="/" class="form" method="post">
+        <div class="cabinet">
+          <div class="cabinet__form">
+            <div class="form__group">
+              <input type="text" class="form__control" placeholder="Ваше имя"  />
+              <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+              <input type="email" class="form__control" placeholder="Ваше e-mail"
+                placeholder="parampamparam@youuhhha.wow" />
+              <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+              <input type="password" class="form__control" placeholder="Новый пароль" placeholder="********" />
+              <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+              <input type="password" class="form__control" placeholder="Подтвердите пароль" placeholder="********" />
+              <span class="form__line"></span>
+            </div>
+          </div>
+          <div class="form__avatar">
+            <img src="./img/src/photo/1625637825_13-kartinkin-com-p-sovremennii-samurai-art-art-krasivo-16.jpeg" alt="" class="form__image">
+
+            <label class="cabinet__file form__control" >
+              <input type="file" >
+              Выбрать аватар
+            </label>
+          </div>
+        </div>
+        <button class="btn__form" type="submit">Сохранить</button>
+
+        
+      </form>
+    </div>
+  </main>
+  <!-- </div> -->
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
