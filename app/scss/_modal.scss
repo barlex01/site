@@ -1,6 +1,6 @@
 .modal{
     z-index: -1;
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,14 @@
     height: 100vh;
     background-color: rgba(19, 18, 18, 0.986);
     width: 100%;
+    opacity: 0;
+    transition: 1s all ease;
    
+}
+.modal.opacity{
+    opacity:1  ;
+    z-index: 200;
+    
 }
 .modal__inner {
     padding: 50px 50px 10px;
@@ -17,4 +24,7 @@
     background-color: #202020;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px rgba(8, 8, 8, 0.267);
+}
+.hiden{
+    overflow: hidden;
 }

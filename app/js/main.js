@@ -21,5 +21,19 @@ $(function() {
         }
 
 })
-
+let body = document.querySelector('.body-1');
+let modal = document.querySelector('.modal');
+let btn = document.querySelector('.works');
+btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.toggle('opacity')
+    body.classList.toggle('hiden')
+})
+modal.addEventListener('click', (e)=> {
+    console.log(e)
+    if(e.target.classList.contains('opacity')) {
+        modal.classList.toggle('opacity');
+        body.classList.toggle('hiden')
+    }
+})
 
